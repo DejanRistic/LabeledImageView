@@ -16,7 +16,9 @@ Custom properites include:
 
 Integration Instructions:
 
-First make sure you setup the custom attributes, to do so copy this into your attrs.xml under the resources tag.
+Download or clone this project and copy the LabeledImageView.java into your project somewhere.
+
+Make sure you setup the custom attributes, you can copy the attrs.xml from this project or copy this into your attrs.xml under the resources tag.
 
     <declare-styleable name="LabeledImageView">
         <attr name="xOffset" format="float" />
