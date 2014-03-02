@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <com.fuzzydev.LabeledImageView
+        android:id="@+id/image_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/description"
+        android:scaleType="fitXY"
+        android:src="@drawable/android_image"
+        custom:labelPosition="topCenter"
+        custom:text="My Image Label"
+        custom:textColor="@android:color/white"
+        custom:textStyle="bold"
+        custom:yOffset="60" />
+
+    <com.fuzzydev.LabeledImageView
+        android:id="@+id/image_two"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/description"
+        android:scaleType="fitXY"
+        android:src="@drawable/android_image_two"
+        custom:labelPosition="bottomLeft"
+        custom:text="My Image Label"
+        custom:textColor="@android:color/black"
+        custom:textStyle="bold" />
+
+    <com.fuzzydev.LabeledImageView
+        android:id="@+id/image_three"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/description"
+        android:scaleType="fitXY"
+        android:src="@drawable/android_image_three"
+        custom:labelPosition="center"
+        custom:text="My Image Label"
+        custom:textColor="@android:color/white"
+        custom:textSizePx="80"
+        custom:textStyle="bold" />
+
+</LinearLayout>
