@@ -43,7 +43,7 @@ First make sure you setup the custom attributes, to do so copy this into your at
     </declare-styleable>
     
     
-Then in any layout make sure to add this line to your root element:
+Then in any layout where you will use the widget make sure to add this line to your root element:
 
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     
@@ -51,7 +51,7 @@ In Eclipse, if the previous line gives you trouble you can try the following:
 
     xmlns:app="http://schemas.android.com/apk/res/com.yourpackage.LabeledImageView"
     
-Then you are ready to use the LabeledImageView in your layout, here is an example:
+Then you are ready to use the LabeledImageView in your layout, here is an example (if using the second line form above replace custom with app):
 
       <com.fuzzydev.LabeledImageView
         android:id="@+id/my_image"
