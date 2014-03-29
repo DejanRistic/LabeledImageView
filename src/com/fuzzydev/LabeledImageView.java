@@ -161,7 +161,9 @@ public class LabeledImageView extends ImageView {
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
-		canvas.drawText(text, xPos, yPos, mTextPaint);
+		if (text != null) {
+			canvas.drawText(text, xPos, yPos, mTextPaint);
+		}
 	}
 
 	public void setTextSize(float textSize) {
